@@ -16,7 +16,7 @@ BLUE='\033[1;34m'
 NC='\033[0m' # No Color
 
 # Banner content
-BANNER_TEXT="Termux Power"
+BANNER_TEXT="ProfessorSergioMarquina"
 SUB_TEXT="Welcome, $(whoami)!"
 
 # Print banner
