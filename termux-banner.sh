@@ -8,7 +8,7 @@ command -v termux-battery-status >/dev/null 2>&1 || pkg install termux-api -y
 clear
 
 # Banner
-figlet "Termux Power" | lolcat
+figlet "The Ghost JiNN" | lolcat
 
 # --- System Information ---
 echo -e "\033[1;33m--- System Information ---\033[0m" | lolcat
@@ -47,8 +47,10 @@ echo -e "\033[1;36mPublic IP:\033[0m $PUBLIC_IP" | lolcat
 echo -e "\033[1;33m--------------------------\033[0m" | lolcat
 echo
 
-# Kali-like prompt (change 'kali' as you wish)
-export PS1="\[\033[1;32m\]kali@kali\[\033[0m\]:\[\033[1;34m\]\w\[\033[0m\]\\$ "
-
 # Fun quote
 echo -e "\033[1;35m“Hack the planet, but do it ethically!”\033[0m" | lolcat
+echo
+
+# Set kali@kali prompt: 'kali' in green, '@', then 'kali' in red, then ':' and path in blue, $ in white
+export PS1='\[\e[1;32m\]ghost\[\e[0m\]\[\e[1;37m\]@\[\e[0m\]\[\e[1;31m\]kali\[\e[0m\]\[\e[1;37m\]:\[\e[0m\]\[\e[1;34m\]\w\[\e[0m\]\[\e[1;37m\]\$\[\e[0m\] '
+
